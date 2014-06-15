@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<style type="text/css">
+	.box {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #000;
+}
+	</style>
+	<script type="text/javascript">
+	function proveIt(event){
+
+		var nextevent = event.type;
+		alert(event.type);
+	
+	}
+	</script>
+</head>
+<body onload="proveIt(event)">
+	<div class="box">I am a box. Please move me across the page.</div>
+	<input type="button" value="click" onclick="proveIt(event)">
+</body>
+</html>

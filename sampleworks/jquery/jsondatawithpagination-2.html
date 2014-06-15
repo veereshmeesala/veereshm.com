@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pagination using Jquery</title>
+</head>
+<body>
+
+<ul id="resultData"></ul>
+<div id="resultDataPaging">
+	<input type="button" id="prev" value="Prev"/>
+	<input type="text" id="pagingStatus" />
+	<input type="button" id="next" value="Next"/>
+</div>
+
+	  <!-- <script src="../../lib/jquery-2.1.1.min.js"></script>  -->
+	 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 <script src="jsondatawithpagination-2.js"></script> 
+	 <script type="text/javascript">
+	 	paginationModule.init({
+	 		url : 'http://api.flickr.com/services/feeds/photos_public.gne?tags=cat&tagmode=any&format=json&jsoncallback=?',
+	 		eleId : '#resultData',
+	 		itemsPerPage: 5,
+	 		pagingId : '#resultDataPaging'
+	 	});
+	 </script>
+</body>
+</html>

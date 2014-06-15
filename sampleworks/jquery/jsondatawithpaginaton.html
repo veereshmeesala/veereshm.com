@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	Jquery Js Sample works
+	<div id="image-container"></div>
+	<script src="../../lib/jquery-2.1.1.js"></script>
+	<script type="text/javascript">
+	$(function(){
+	
+	
+	//assign your api key equal to a variable
+	var apiKey = '90580cdb86fd4ada834ed08d9366b0b9';
+	
+	//the initial json request to flickr
+	//to get your latest public photos, use this request: http://api.flickr.com/services/rest/?&amp;method=flickr.people.getPublicPhotos&amp;api_key=' + apiKey + '&amp;user_id=29096781@N02&amp;per_page=15&amp;page=2&amp;format=json&amp;jsoncallback=?
+	
+	http://api.flickr.com/services/rest/?&amp;method=flickr.people.getPublicPhotos&amp;api_key=90580cdb86fd4ada834ed08d9366b0b9&amp;format=json&amp;jsoncallback=?
+
+	$.getJSON('http://api.flickr.com/services/rest/?&amp;method=flickr.photosets.getPhotos&amp;api_key=' + apiKey + '&amp;format=json&amp;jsoncallback=?',
+    function(data){
+ 
+        			debugger;
+
+              	});
+
+})();
+	</script>
+</body>
+</html>

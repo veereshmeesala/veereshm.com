@@ -1,0 +1,95 @@
+
+<div class="bg-primary row clearfix">
+
+    <!-- These two buttons switch the layout variable,
+       which causes the correct UL to be shown. -->
+       <div class="col-md-6">
+          <h3>Projects at Deloitte</h3>
+      </div>
+       <div class="col-md-6"><a class="list-icon pull-right" ng-class="{active: layout == 'list'}" ng-click="layout = 'list'" title="List View"><span class="glyphicon glyphicon-th-list"></span>
+    </a>
+    <a class="grid-icon pull-right" ng-class="{active: layout == 'grid'}" ng-click="layout = 'grid'" title="Grid View"><span class="glyphicon glyphicon-th"></span></a></div>
+    
+  </div>
+ 
+  <div ng-show="layout == 'grid'" class="grid">
+    <div class="row">
+      <div class="col-md-12 clearfix" >
+            <div class="thumbnail" data-ng-repeat="delpro in projects track by delpro.name">
+            <a href="{{delpro.linkurl}}"target="{{delpro.targetlink}}">
+              <img ng-src="{{delpro.imageurl}}" alt="...">
+ <!--              <div class="caption">
+                <h3>{{delpro.thumblabel}}</h3>  
+                <p>...</p>
+
+              </div> -->
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div ng-show="layout == 'list'" class="list">
+       <div class="media" data-ng-repeat="delpro in projects track by delpro.name">
+              <a class="pull-left pic2border" href="{{delpro.linkurl}}"target="{{delpro.targetlink}}">
+                <img class="media-object" alt="" ng-src="{{delpro.thumbnailurl}}" style="width: 150px; height: 150px;">
+              </a>
+              <div class="media-body">
+                  <h4 class="media-heading">{{delpro.name}}</h4>
+                  <p>{{delpro.description}}</p>
+                  <p><strong>Technology Used:</strong> {{delpro.technologies}}</p>
+                  <p><strong>Roles & Responsibilities: </strong>
+                  <ul>
+                    <li data-ng-repeat="delrole in delpro.roles">{{delrole.list}}</li>
+                  </ul>
+                  </p>
+              </div>
+      </div>
+ 
+</div>
+
+<div class="bg-primary row clearfix">
+
+    <!-- These two buttons switch the layout variable,
+       which causes the correct UL to be shown. -->
+       <div class="col-md-6"><h3>Projects at IVY Comptech Pvt Ltd</h3>
+</div>
+       <div class="col-md-6"><a class="list-icon pull-right" ng-class="{active: layout == 'list'}" ng-click="layout = 'list'" title="List View"><span class="glyphicon glyphicon-th-list"></span>
+    </a>
+    <a class="grid-icon pull-right" ng-class="{active: layout == 'grid'}" ng-click="layout = 'grid'" title="Grid View"><span class="glyphicon glyphicon-th"></span></a></div>
+    
+  </div>
+
+    <div ng-show="layout == 'grid'" class="grid">
+        <div class="row">
+          <div class="col-md-12 clearfix" >
+                <div class="thumbnail" data-ng-repeat="ivyProject in ivyProjects track by ivyProject.name">
+                <a href="{{ivyProject.linkurl}}"target="{{ivyProject.targetlink}}">
+                    <img ng-src="{{ivyProject.imageurl}}" alt="...">
+<!--                     <div class="caption">
+                      <h3>{{ivyProject.thumblabel}}</h3>  
+                      <p>...</p>
+
+                    </div> -->
+                  </a>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div ng-show="layout == 'list'" class="list">
+       <div class="media" data-ng-repeat="ivyProject in ivyProjects track by ivyProject.name">
+              <a class="pull-left pic2border" href="{{ivyProject.linkurl}}"target="{{ivyProject.targetlink}}">
+                <img class="media-object" alt="" ng-src="{{ivyProject.thumbnailurl}}" style="width: 150px; height: 150px;">
+              </a>
+              <div class="media-body">
+                  <h4 class="media-heading">{{ivyProject.name}}</h4>
+                  <p>{{ivyProject.description}}</p>
+                  <p><strong>Technology Used:</strong> {{ivyProject.technologies}}</p>
+                  <p><strong>Roles & Responsibilities: </strong>
+                  <ul>
+                    <li data-ng-repeat="ivyrole in ivyProject.roles">{{ivyrole.list}}</li>
+                  </ul>
+                  </p>
+              </div>
+      </div>
+ 
+</div>

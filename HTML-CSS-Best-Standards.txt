@@ -1,0 +1,17 @@
+Best Standards
+==================
+
+http://isobar-idev.github.io/code-standards/
+
+http://learn.shayhowe.com/html-css/writing-your-best-code/
+
+http://code.tutsplus.com/tutorials/30-html-best-practices-for-beginners--net-4957
+
+
+
+Interview Q & A
+=============
+
+http://www.codeproject.com/Articles/702051/important-HTML-Interview-questions-with-answe
+
+http://dglobaltech.com/css-interview-questions-and-answers-15-common-css-questions/

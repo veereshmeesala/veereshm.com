@@ -1,0 +1,11 @@
+<div ng-show="layout == 'grid'" class="grid">
+    <div class="row">
+      <div class="col-md-12 clearfix" >
+            <div class="thumbnail" data-ng-repeat="delpro in projects track by delpro.name">
+            <a href="{{delpro.linkurl}}"target="{{delpro.targetlink}}">
+              <img ng-src="{{delpro.imageurl}}" alt="...">
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
