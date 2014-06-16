@@ -2,20 +2,9 @@
 
 var profileApp = angular.module('profileApp', ['ngRoute', 'ngResource']);
 
-profileApp.config(['$routeProvider', '$stateProvider', function($routeProvider, $stateProvider){
+profileApp.config(['$routeProvider', function($routeProvider){
 
-	// Define a top-level state:
-	$stateProvider.state('sampleworks', {
-  			url: '/sampleworks',
-  			controller: 'sampleworksCtrl',
-  			templateUrl: 'sampleworks/index.html'
-	});
 
-	// Define a child state for 'users':
-	$stateProvider.state('sampleworks.jqueryexamples', {
-	  url: '/jqueryexamples',
-	  templateUrl: 'sampleworks/templates/jqueryworks.html'
-	});
 
 	$routeProvider.when('/home', {
 		templateUrl: 'templates/home.html',
