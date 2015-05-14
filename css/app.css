@@ -81,7 +81,7 @@ footer{
 	padding: 10px 0;
 	border-top: 1px solid #ddd;
 	margin-top: 20px;
-	position: absolute;
+	/*position: absolute;*/
 	bottom: 0px;
 	width: 100%;
 }
@@ -165,4 +165,43 @@ padding-left: 20px;
 .nav-sidebar > .active > a {
 color: #fff;
 background-color: #428bca;
+}
+
+
+/* Page animation */
+.view {
+    width: 100%;
+    padding-left: 1em;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+.slideLeft.ng-enter, .slideLeft.ng-leave, .slideRight.ng-enter, .slideRight.ng-leave  {
+    -webkit-transition:all 3s;
+    transition:all 3s;
+}
+
+.slideLeft.ng-enter {
+    left:100%;
+}
+
+.slideLeft.ng-enter.ng-enter-active {
+    left:0;
+}
+
+.slideLeft.ng-leave.ng-leave-active {
+    left:-100%;
+}
+
+.slideRight.ng-enter {
+    left:-100%;
+}
+
+.slideRight.ng-enter.ng-enter-active {
+    left:0;
+}
+
+.slideRight.ng-leave.ng-leave-active {
+    left:100%;
 }

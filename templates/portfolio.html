@@ -1,4 +1,49 @@
 
+
+<div class="bg-primary row clearfix">
+
+    <!-- These two buttons switch the layout variable,
+       which causes the correct UL to be shown. -->
+       <div class="col-md-6">
+          <h3>Projects at Global Radio</h3>
+      </div>
+       <div class="col-md-6"><a class="list-icon pull-right" ng-class="{active: layout == 'list'}" ng-click="layout = 'list'" title="List View"><span class="glyphicon glyphicon-th-list"></span>
+    </a>
+    <a class="grid-icon pull-right" ng-class="{active: layout == 'grid'}" ng-click="layout = 'grid'" title="Grid View"><span class="glyphicon glyphicon-th"></span></a></div>
+    
+  </div>
+
+  <div ng-show="layout == 'grid'" class="grid">
+    <div class="row">
+      <div class="col-md-12 clearfix" >
+            <div class="thumbnail" data-ng-repeat="grProject in globalRadioProjects track by grProject.name">
+            <a href="{{grProject.linkurl}}"target="{{grProject.targetlink}}">
+              <img ng-src="{{grProject.imageurl}}" alt="...">
+
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div ng-show="layout == 'list'" class="list">
+       <div class="media" data-ng-repeat="grProject in globalRadioProjects track by grProject.name">
+              <a class="pull-left pic2border" href="{{grProject.linkurl}}"target="{{grProject.targetlink}}">
+                <img class="media-object" alt="" ng-src="{{grProject.thumbnailurl}}" style="width: 150px; height: 150px;">
+              </a>
+              <div class="media-body">
+                  <h4 class="media-heading">{{grProject.name}}</h4>
+                  <p>{{grProject.description}}</p>
+                  <p><strong>Technology Used:</strong> {{grProject.technologies}}</p>
+                  <p><strong>Roles & Responsibilities: </strong>
+                  <ul>
+                    <li data-ng-repeat="grProject in grProject.roles">{{grProject.list}}</li>
+                  </ul>
+                  </p>
+              </div>
+      </div>
+ 
+</div>
+
 <div class="bg-primary row clearfix">
 
     <!-- These two buttons switch the layout variable,
@@ -18,11 +63,6 @@
             <div class="thumbnail" data-ng-repeat="delpro in projects track by delpro.name">
             <a href="{{delpro.linkurl}}"target="{{delpro.targetlink}}">
               <img ng-src="{{delpro.imageurl}}" alt="...">
- <!--              <div class="caption">
-                <h3>{{delpro.thumblabel}}</h3>  
-                <p>...</p>
-
-              </div> -->
               </a>
           </div>
       </div>

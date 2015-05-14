@@ -1,6 +1,6 @@
 'use strict';
 
-var profileApp = angular.module('profileApp', ['ngRoute', 'ngResource']);
+var profileApp = angular.module('profileApp', ['ngRoute', 'ngResource', 'ngAnimate']);
 
 profileApp.config(['$routeProvider', function($routeProvider){
 
@@ -8,7 +8,8 @@ profileApp.config(['$routeProvider', function($routeProvider){
 
 	$routeProvider.when('/home', {
 		templateUrl: 'templates/home.html',
-		controller: 'homeCtrl'
+		controller: 'homeCtrl',
+		animate: "slideLeft" 
 	}).when('/aboutme', {
 		templateUrl: 'templates/aboutme.html',
 		controller: 'aboutmeCtrl'
