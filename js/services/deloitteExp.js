@@ -4,7 +4,7 @@ profileApp.service('deloitteExp', function(){
 					{
 						name:'Business Chemistry',
 						description:'Business Chemistry is a self-assessment application which any Deloitte employee can take by answering a questionnaire having randomly generated questions from the repository. Each Question can be answered based on a rating scale and the employee is graded to be aligned with one of the patterns: Driver, Pioneer, Integrator, and Guardian.',
-						technologies:'Knockout.js, Durandal.js, Require.js, Boostrap3',
+						technologies:'Knockout.js, Durandal.js, Require.js, Boostrap3, ASP.Net, C#',
 						companyname:'Deloitte',
 						fromdate:'Dec-2013',
 						todate:'March-2014',

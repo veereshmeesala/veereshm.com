@@ -1,0 +1,117 @@
+
+body{
+	font-family: 'Droid Sans', sans-serif;
+	color: #414141;
+}
+
+
+.button-delete {
+    background-image: url(./img/delete_icon.png); 
+    background-color: transparent; 
+    background-repeat: no-repeat;  
+    background-position: 0px 0px;  
+    border: none;          
+    cursor: pointer; 
+    width: 16px;      
+    height: 21px;       
+    vertical-align: middle; 
+}
+
+.button-submit{
+	background-color: #000066;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px 15px;
+	border-color:  transparent;
+	box-shadow: 2px 3px 5px #888888;
+}
+
+.button-submit.disabled,
+.button-submit[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: .65;
+}
+
+.sub-heading{
+	font-family: 'Droid Serif', serif;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+footer{
+	margin-top: 20px;
+	background-color: #666;
+	color: #fff;
+	  width: 100%;
+
+  /*position: absolute;
+  bottom: 0;
+  left: 0;*/
+  clear: both;
+  
+}
+
+.table-chart {
+    border-collapse: collapse;
+  }
+  .table-chart td,
+  .table-chart th {
+    background-color: #fff;
+  }
+  .table-chart {
+  /*width: 100%;
+  max-width: 100%;*/
+  margin-bottom: 20px;
+}
+.table-chart > thead > tr > th,
+.table-chart > tbody > tr > th,
+.table-chart > tfoot > tr > th,
+.table-chart > thead > tr > td,
+.table-chart > tbody > tr > td,
+.table-chart > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  /*border-top: 1px solid #ddd;*/
+}
+.table-chart > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #787878;
+}
+.table-chart > thead > tr > th.border-none{
+	border: none;
+}
+.table-chart > caption + thead > tr:first-child > th,
+.table-chart > colgroup + thead > tr:first-child > th,
+.table-chart > thead:first-child > tr:first-child > th,
+.table-chart > caption + thead > tr:first-child > td,
+.table-chart > colgroup + thead > tr:first-child > td,
+.table-chart > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+/*.table-chart > tbody + tbody {
+  border-top: 2px solid #787878;
+}*/
+.table-chart .table {
+  background-color: #fff;
+}
+
+.table-chart tr.subtotal{
+	color: #666666;
+}
+
+.table-chart tr.subtotal td{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.table-chart tr.total-cost{
+	font-family: 'Droid Serif', serif;
+	font-weight: bold;
+
+}
+

@@ -4,7 +4,7 @@ profileApp.service('globalRadioExp', function(){
 					{
 						name:'Gplan',
 						description:'gPlan is a sales planning system for use by the airtime sales teams at Global Radio. Given a set of constraints it finds the best broadcast times on radio stations for a customers advertising campaign. These slots are optimised for price, availability and desired audience reach.',
-						technologies:'Knockout.js, Durandal.js, Require.js, SASS',
+						technologies:'Knockout.js, Durandal.js, Require.js, SASS, ASP.Net, C#',
 						companyname:'Global Radio',
 						fromdate:'Dec-2013',
 						todate:'March-2014',

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AKQA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">   
+</head>
+<body>
+<div class="container">
+    <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <header>
+            <h1><img src="./img/logo.png" alt="AKQA" /></h1>
+            </headeor>
+            <section>
+                <h2 class="sub-heading">Your Basket</h2>
+                <p>Items added to your basket are shown below.<br />
+                    Adjust the quantities or remove items before continuing your purchase.
+                </p>
+                <form action="" id="shoppingCart">
+                    <table class="table-chart">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Qty</th>
+                                <th>Cost</th>
+                                <th class="border-none">&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cotton T-shirt, Medium</td>
+                                <td class="price"><span class="currency">&pound;</span><span class="amount">1.99</span></td>
+                                <td class="quantity"><input type="number" min="1" max="10" step="1" value="1" name="qty" class="number"></td>
+                                 <td class="cost"><span class="currency">&pound;</span><span class="amount">1.99</span></td>
+                                <td><input type="button" class="button-delete" value=""></td>
+
+                            </tr>
+                            <tr>
+                                <td>Baseball Cap, One Size</td>
+                                <td class="price"><span class="currency">&pound;</span><span class="amount">2.99</span></td>
+                                <td class="quantity"><input type="number" min="1" max="10" step="1" value="1" name="qty" class="number"></td>
+                                <td class="cost"><span class="currency">&pound;</span><span class="amount">2.99</span></td>
+                                <td><input type="button" class="button-delete" value=""></td>
+
+                            </tr>
+                            <tr>
+                                <td>Swim Shorts, Medium</td>
+                                <td class="price"><span class="currency">&pound;</span><span class="amount">3.99</span></td>
+                                <td class="quantity"><input type="number" min="1" max="10" step="1" value="1" name="qty" class="number"></td>
+                                <td class="cost"><span class="currency">&pound;</span><span class="amount">3.99</span></td>
+                                <td><input type="button" class="button-delete" value=""></td>
+                            </tr>.
+                            <tr class="subtotal">
+                                <td>Subtotal <br/>
+                                    VAT @20%
+                                </td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td><span class="currency">&pound;</span><span id="subTotal">8.97</span><br /><span class="currency">&pound;</span><span id="vat">1.79</span></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr class="total-cost">
+                                <td>Total Cost</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td><span class="currency">&pound;</span><span id="totalCost">9.00</span></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" align="right">
+                                    <button class="button-submit">Buy Now &gt;&gt;</button>
+                                </td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </section>
+            
+    </div>
+    <div class="col-md-3"></div>
+</div>
+</div>
+
+<footer>
+<div class="container">
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <p>&copy; AKQA Ltd.Registered in England: 2964334</p>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+    
+</div>
+                
+</footer>
+            
+    <script src="./lib/jquery-1.11.3.min.js"></script>
+    <script src="./js/shoppingCart.js"></script>
+</body>
+</html>

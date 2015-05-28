@@ -8,8 +8,7 @@ profileApp.config(['$routeProvider', function($routeProvider){
 
 	$routeProvider.when('/home', {
 		templateUrl: 'templates/home.html',
-		controller: 'homeCtrl',
-		animate: "slideLeft" 
+		controller: 'homeCtrl'
 	}).when('/aboutme', {
 		templateUrl: 'templates/aboutme.html',
 		controller: 'aboutmeCtrl'
@@ -49,3 +48,17 @@ profileApp.config(['$routeProvider', function($routeProvider){
 //         });
 //     }
 // })
+
+
+// profileApp.directive('animClass',function($route){
+//   return {
+//     link: function(scope, elm, attrs){
+//       var enterClass = $route.current.animate;
+//       elm.addClass(enterClass);
+//       scope.$on('$destroy',function(){
+//         elm.removeClass(enterClass);
+//         elm.addClass($route.current.animate);
+//       })
+//     }
+//   }
+// });
