@@ -116,10 +116,7 @@
 
 
 		}
-
-
-
-
+		
 
 		function init () {
 			console.log('init');
@@ -130,7 +127,6 @@
 		return init();
 
 }(window.jQuery, {
-
 	currency: "&pound;",
 	vat: 20
 }));
