@@ -4,8 +4,8 @@
 // 	$scope.greeting = 'hola';
 // });
 
-profileApp.controller('contactCtrl', function contactCtrl($scope) {
-    $scope.message = 'contactCtrl';
+profileApp.controller('aboutmeCtrl', function aboutmeCtrl($scope) {
+  $scope.phones = 'aboutmeCtrl';
 
  
 });

@@ -15,6 +15,9 @@ profileApp.config(['$routeProvider', function($routeProvider){
 	}).when('/portfolio', {
 		templateUrl: 'templates/portfolio.html',
 		controller: 'portfolioCtrl'
+	}).when('/contact', {
+	    templateUrl: 'templates/contact.html',
+	    controller: 'contactCtrl'
 	}).otherwise({
 		redirectTo: '/home'
 	});
