@@ -10,7 +10,7 @@ profileApp.config(['$routeProvider', function($routeProvider){
 		templateUrl: 'templates/home.html',
 		controller: 'homeCtrl'
 	}).when('/aboutme', {
-		templateUrl: 'templates/aboutme.html',
+	    templateUrl: 'templates/aboutme-test.html',
 		controller: 'aboutmeCtrl'
 	}).when('/portfolio', {
 		templateUrl: 'templates/portfolio.html',
